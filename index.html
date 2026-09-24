@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hermehar Bedi</title>
+  <meta name="description" content="Hermehar Pal Singh Bedi, PhD scholar at IIIT Delhi working on generative AI, human-centered AI and immersive computing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="active">About</a>
+  <a href="achievements.html">Achievements</a>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</nav>
+<main>
+
+  <!-- ============ HEADER ============ -->
+  <header class="profile">
+    <img class="avatar" src="images/profile.jpeg" alt="Hermehar Bedi"
+         onerror="this.style.visibility='hidden'">
+    <div>
+      <h1>Hermehar Pal Singh Bedi</h1>
+      <p>
+        I am a Ph.D. scholar at <a href="https://www.iiitd.ac.in/">IIIT Delhi</a>, working at the
+        intersection of <b>Generative AI</b>, <b>Human-Centered AI</b> and <b>Immersive Computing</b>.
+        Rather than foundational model research, I focus on building AI systems that help people:
+        systems that understand what a person wants, respect the constraints they set,
+        and leave the final decisions in their hands.
+      </p>
+      <p>
+        My Ph.D. brings this to home design. I develop GAN- and diffusion-based models that generate
+        architectural floorplans from simple, high-level requirements, and then visualise the
+        generated homes in <b>Virtual Reality</b>, so people can explore them at full scale and
+        refine them together with the AI.
+      </p>
+      <p>
+        More broadly, I work on constraint-aware generation, human-in-the-loop interaction,
+        multimodal AI and AI-assisted spatial reasoning, with the goal of AI that is understandable,
+        controllable and useful in real-world workflows.
+      </p>
+      <p class="interests">
+        <b>Interests:</b> Generative AI · GANs · Diffusion Models · Human-AI Collaboration ·
+        Human-Centered AI · Multimodal AI · Spatial Reasoning · Virtual Reality · Immersive Computing
+      </p>
+      <p class="links">
+        <a href="mailto:hermeharb@iiitd.ac.in">Mail</a> /
+        <a href="https://scholar.google.co.in/citations?user=ZLsvrkQAAAAJ&hl=en">Scholar</a> /
+        <a href="https://www.linkedin.com/in/hermeharbedi">LinkedIn</a> /
+        <a href="https://www.researchgate.net/profile/Hermehar-Bedi">ResearchGate</a> /
+        <a href="https://github.com/hermeharbedi">GitHub</a> <!-- TODO: confirm username -->
+      </p>
+    </div>
+  </header>
+
+  <!-- ============ UPDATES ============ -->
+  <details open>
+    <summary>Updates</summary>
+    <ul class="news">
+      <li>
+        <span class="date">2026</span>
+        <span class="badge pub">Submission</span>
+        <span class="text">Submitted two papers to <b>WACV 2027</b>.</span>
+      </li>
+      <li>
+        <span class="date">2026</span>
+        <span class="badge pub">Submission</span>
+        <span class="text">Submitted two papers to <b>IEEE VR 2027</b>.</span>
+      </li>
+      <li>
+        <span class="date">2025</span>
+        <span class="badge service">Service</span>
+        <span class="text">Organised the 16th edition of <b>IndiaHCI</b> at IIIT Delhi.</span>
+      </li>
+      <li>
+        <span class="date">2025</span>
+        <span class="badge pub">Publication</span>
+        <span class="text">Book chapter on AI for diagnosis and disease prediction published by
+          <b>Springer Nature</b>. <a href="https://doi.org/10.1007/978-3-031-84404-1_2">[Link]</a></span>
+      </li>
+      <li>
+        <span class="date">2025</span>
+        <span class="badge talk">Workshop</span>
+        <span class="text">Ran <b>AI101: AI for Enhancing Business Efficiency</b>, a four-session
+          hands-on workshop organised by IIC, IIIT Delhi.</span>
+      </li>
+    </ul>
+    <p class="more">More service and talks on the <a href="achievements.html">Achievements page</a>.</p>
+  </details>
+
+  <!-- ============ PROJECTS ============ -->
+  <!-- Thumbnails: drop an image at the path in each <img src> and it replaces the placeholder. -->
+  <details open>
+    <summary>Ongoing Projects</summary>
+
+    <div class="project">
+      <div class="thumb">
+        <span>Count2Plan</span>
+        <img src="images/count2plan.png" alt="Generated floorplans" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>Count2Plan: Can Spatial Topologies Emerge from Room Counts Alone?</h3>
+        <p class="meta">2026 · <span class="status">Under review</span></p>
+        <p class="tags"><span>Generative AI</span><span>GANs</span><span>Diffusion</span><span>Spatial Reasoning</span></p>
+        <p class="desc">A count-conditioned two-stage GAN that generates floorplans from a room-count
+          vector alone, with no adjacency graph or bubble diagram. The plans still reproduce the room
+          adjacencies of real homes, showing that spatial topology can emerge from minimal supervision.</p>
+         <!--<p class="links">[<a href="https://github.com/hermeharbedi/From-Symbolic-Room-Counts-to-Spatial-Topology">Code</a>]</p> -->
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="thumb">
+        <span>VR-LLM Co-Creation</span>
+        <img src="images/vr-llm-cocreation.png" alt="Furnished 3D room layout" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>VR-LLM Human-AI Co-Creation for Semantic Layout Planning</h3>
+        <p class="meta">2026</p>
+        <p class="tags"><span>HCAI</span><span>Human-AI Co-Creation</span><span>LLM</span><span>VR</span></p>
+        <p class="desc">A constraint-aware LLM planning framework for collaborative interior design in
+          VR. A Qwen3 pipeline recommends furniture and lays it out with usability, accessibility and
+          collision constraints in mind. Users edit the layout in VR while the LLM checks each edit
+          against the design rules, so the human keeps control of the final design.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="thumb">
+        <span>Research Intelligence Assistant</span>
+        <img src="images/research_intelligence.png" alt="Research Intelligence Assistant" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>Research Intelligence Assistant</h3>
+        <p class="meta">2026</p>
+        <p class="tags"><span>HCAI</span><span>Agentic AI</span><span>Human-AI Collaboration</span></p>
+        <p class="desc">An agentic platform for literature discovery, cross-paper comparison and
+          long-term knowledge management. A browser agent collects papers from Scholar Inbox, and a
+          pipeline reads the PDFs, compares them, tracks trends and flags research gaps. It runs on a
+          self-hosted Qwen3 stack, so papers never leave the lab, and keeps the researcher in the loop
+          through transparent reasoning and adjustable autonomy.</p>
+        <p class="links">[<a href="https://github.com/hermeharbedi/Research-Intelligence-Assistant">Code</a>]</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="thumb">
+        <span>VR CAD Modelling</span>
+        <img src="images/vr-cad.png" alt="VR CAD modelling tool" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>Virtual Reality Based CAD Modelling Tool</h3>
+        <p class="meta">2026 · <span class="status">Under review</span></p>
+        <p class="tags"><span>HCI</span><span>VR</span></p>
+        <p class="desc">An immersive CAD system in Unity for the HTC Vive, with mesh creation,
+          extrusion, Boolean operations, spline modelling, custom gizmos, OBJ import/export and
+          undo/redo. In user studies, VR made novices noticeably faster at modelling, while very complex
+          CAD tasks stayed hard to scale.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="thumb">
+        <span>ArtAssist</span>
+        <img src="images/artassist.png" alt="ArtAssist sketch background generation" onerror="this.remove()">
+      </div>
+      <div class="body">
+        <h3>ArtAssist: Real-time Sketch Background Generation</h3>
+        <p class="meta">2026</p> <!-- TODO: confirm year -->
+        <p class="tags"><span>Generative AI</span><span>Diffusion</span><span>Creativity Support</span></p>
+        <p class="desc">Generates a background for a sketch in real time while the artist is still
+          drawing, matching the style of the sketch. Built on SDXL.</p>
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <details open>
+    <summary>Selected Publications</summary>
+
+    <div class="pub">
+      <h3>Artificial Intelligence in Diagnostic and Disease Prediction</h3>
+      <p class="authors"><b>Hermehar P.S. Bedi</b>, Renu Puri, Amandeep Kaur, Deepak Puri</p>
+      <p class="venue">Book chapter in <i>AI in Healthcare Information Systems: Security and Privacy Challenges</i>, Springer Nature, 2025</p>
+      <p class="links">[<a href="https://doi.org/10.1007/978-3-031-84404-1_2">Paper</a>]</p>
+    </div>
+
+    <div class="pub">
+      <h3>Comparison of Watershed and K-Means on the Basis of SSIM for Detection of Brain Tumours from MR Images</h3>
+      <p class="authors"><b>Hermehar P.S. Bedi</b>, Gulchetan Singh, Gehna Sachdeva</p>
+      <p class="venue">4th International Conference on Computational Methods in Science and Technology (ICCMST), 2024</p>
+      <p class="links">[<a href="https://doi.org/10.1201/9781003561651-4">Paper</a>] [<a href="https://github.com/hermeharbedi/Comparison-of-Watershed-and-K-Means-on-basis-of-SSIM-for-detection-of-Brain-Tumours-from-MR-Images">Code</a>]</p>
+    </div>
+
+    <div class="pub">
+      <h3>Tumour Classification and Detection</h3>
+      <p class="authors"><b>Hermehar P.S. Bedi</b>, Sukhpreet Kaur, Saumya Rajvanshi</p>
+      <p class="venue">Book chapter in <i>Bio-Inspired Optimization for Medical Data</i>, Wiley, 2024</p>
+      <p class="links">[<a href="https://doi.org/10.1002/9781394214211.ch4">Paper</a>]</p>
+    </div>
+
+    <div class="pub">
+      <h3>Blockchain Technology: Concepts and Applications</h3>
+      <p class="authors"><b>Hermehar Pal Singh Bedi</b>, Valentina E. Balas, Sukhpreet Kaur, Rubal Jeet</p>
+      <p class="venue">Book chapter in <i>Blockchain and Deep Learning for Smart Healthcare</i>, Wiley, 2023</p>
+      <p class="links">[<a href="https://doi.org/10.1002/9781119792406.ch1">Paper</a>]</p>
+    </div>
+
+    <p class="more">Full list on <a href="achievements.html#publications">the Achievements page</a> and
+      <a href="https://scholar.google.co.in/citations?user=ZLsvrkQAAAAJ&hl=en">Google Scholar</a>.</p>
+  </details>
+
+  <!-- ============ EDUCATION ============ -->
+  <details open>
+    <summary>Education</summary>
+    <div class="edu">
+      <div>
+        <h3>Indraprastha Institute of Information Technology Delhi (IIIT Delhi)</h3>
+        <p>Ph.D. in Generative AI and Virtual Reality</p>
+        <p class="muted">Supervisors: Dr. Kalpana Shankhwar and Dr. Anmol Srivastava</p>
+      </div>
+      <span class="date">2024.7 – present</span>
+    </div>
+    <div class="edu">
+      <div>
+        <h3>Chandigarh Engineering College</h3>
+        <p>B.Tech. in Computer Science and Engineering (with distinction)</p>
+      </div>
+      <span class="date">2020.7 – 2024.6</span>
+    </div>
+  </details>
+
+  <footer>
+    <p class="collab">I am open to collaborations and consulting in Generative AI, Human-Centered AI
+      and Virtual Reality. Feel free to reach out at
+      <a href="mailto:hermeharb@iiitd.ac.in">hermeharb@iiitd.ac.in</a>.</p>
+    <p>© 2026 Hermehar Bedi</p>
+  </footer>
+</main>
+</body>
+</html>
