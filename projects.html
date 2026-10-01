@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Hermehar Bedi</title>
+  <meta name="description" content="Research projects of Hermehar Pal Singh Bedi across generative AI, virtual reality and human-centered AI systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+<nav>
+  <a href="index.html">About</a>
+  <a href="projects.html" class="active">Projects</a>
+  <a href="achievements.html">Achievements</a>
+  <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</nav>
+<main>
+  <h1>Projects</h1>
+
+  <!-- Category tabs. Each button filters by the data-cat values on the cards below. -->
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-filter="all" type="button">All</button>
+    <button class="tab" data-filter="ai" type="button">AI</button>
+    <button class="tab" data-filter="vr" type="button">VR</button>
+    <button class="tab" data-filter="hcai" type="button">HCAI Systems</button>
+  </div>
+
+  <article class="project" data-cat="ai">
+    <div class="thumb">
+      <span>Count2Plan</span>
+      <img src="images/count2plan.png" alt="Generated floorplans" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>Constrained Conditioned Floorplan Generation with Human-in-the-Loop Interaction</h3>
+      <p class="meta">Ph.D. work, ongoing · <span class="status">Under review</span></p>
+      <p class="tags"><span>Generative AI</span><span>GANs</span><span>Diffusion</span><span>Human-AI Co-Creation</span></p>
+      <p class="desc">Constraint-conditioned generative models for collaborative floorplan synthesis
+        from high-level user specifications.</p>
+      <ul class="bullets">
+        <li>A slot-based conditional generator that dedicates each latent slot to a semantic room
+          type, so layouts can be controlled by room counts.</li>
+        <li>A human-in-the-loop framework that lets users refine generated layouts while the
+          constraints stay satisfied.</li>
+        <li>~90% exact room-count accuracy, 100% ±1 count accuracy and 100% presence
+          precision/recall on the evaluation benchmarks.</li>
+        <li>Spatial topology emerges from count supervision alone, with no topological annotations.</li>
+      </ul>
+      <p class="links">[<a href="https://github.com/hermeharbedi/From-Symbolic-Room-Counts-to-Spatial-Topology">Code</a>]</p>
+    </div>
+  </article>
+
+  <article class="project" data-cat="ai">
+    <div class="thumb">
+      <span>FloorDiff</span>
+      <img src="images/floordiff.png" alt="FloorDiff generated layouts" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>FloorDiff: Diffusion-Based Floorplan Generation</h3>
+      <p class="meta">2026 · <span class="status">Under review</span></p>
+      <p class="tags"><span>Generative AI</span><span>Diffusion</span><span>Spatial Reasoning</span></p>
+      <p class="desc">A diffusion model that generates floorplans from room counts alone, with no
+        adjacency graph, bubble diagram or hand-drawn boundary. Generating room geometry rather than
+        pixels keeps the rooms clean and buildable, and the same count specification can produce many
+        distinct plans.</p>
+    </div>
+  </article>
+
+  <article class="project" data-cat="hcai">
+    <div class="thumb">
+      <span>VR-LLM Co-Creation</span>
+      <img src="images/vr-llm-cocreation.png" alt="Furnished 3D room layout" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>VR-LLM Human-AI Co-Creation for Semantic Layout Planning</h3>
+      <p class="meta">2026</p>
+      <p class="tags"><span>HCAI</span><span>Human-AI Co-Creation</span><span>LLM</span><span>VR</span></p>
+      <p class="desc">A constraint-aware LLM planning framework for collaborative interior design in
+        VR, combining multimodal user input with human-guided decisions.</p>
+      <ul class="bullets">
+        <li>An end-to-end Qwen3 pipeline that recommends furniture, generates constraint-aware
+          layouts and optimises placement for usability, accessibility and collision avoidance.</li>
+        <li>Users modify layouts directly in VR while the LLM validates every edit against the
+          spatial design constraints.</li>
+        <li>A planning framework that balances autonomous AI assistance with human oversight
+          throughout the design process.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="project" data-cat="hcai">
+    <div class="thumb">
+      <span>Research Intelligence Assistant</span>
+      <img src="images/research_intelligence.png" alt="Research Intelligence Assistant" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>Research Intelligence Assistant</h3>
+      <p class="meta">2026</p>
+      <p class="tags"><span>HCAI</span><span>Agentic AI</span><span>Human-AI Collaboration</span></p>
+      <p class="desc">A human-centered research platform for literature discovery, comparative
+        analysis and long-term knowledge management through agentic workflows.</p>
+      <ul class="bullets">
+        <li>A browser-based agent that finds, collects and processes papers from authenticated
+          Scholar Inbox sessions on its own.</li>
+        <li>An agentic pipeline for PDF understanding, cross-paper comparison, trend analysis and
+          automated research-gap identification.</li>
+        <li>A self-hosted Qwen3 inference stack on local GPUs, so literature analysis stays private
+          and needs no commercial LLM API.</li>
+        <li>Transparent reasoning, controllable autonomy and human-in-the-loop interaction
+          throughout.</li>
+      </ul>
+      <p class="links">[<a href="https://github.com/hermeharbedi/Research-Intelligence-Assistant">Code</a>]</p>
+    </div>
+  </article>
+
+  <article class="project" data-cat="vr">
+    <div class="thumb">
+      <span>VR CAD Modelling</span>
+      <img src="images/vr-cad.png" alt="VR CAD modelling tool" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>Virtual Reality Based CAD Modelling Tool</h3>
+      <p class="meta">2026 · <span class="status">Under review</span></p>
+      <p class="tags"><span>HCI</span><span>VR</span></p>
+      <p class="desc">An immersive CAD system built in Unity for the HTC Vive, where 3D models are
+        created through natural spatial interaction instead of mouse and keyboard.</p>
+      <ul class="bullets">
+        <li>Precision editing: mesh creation, extrusion, Boolean operations, spline-based modelling,
+          object manipulation and custom gizmos.</li>
+        <li>OBJ import/export, custom mesh generation, a SteamVR interaction pipeline and an
+          undo/redo command architecture.</li>
+        <li>User studies show VR clearly improves modelling efficiency for novices, while highly
+          complex CAD tasks remain hard to scale.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="project" data-cat="ai">
+    <div class="thumb">
+      <span>ArtAssist</span>
+      <img src="images/artassist.png" alt="ArtAssist sketch background generation" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>ArtAssist: Real-time Sketch Background Generation</h3>
+      <p class="meta">2026</p>
+      <p class="tags"><span>Generative AI</span><span>Diffusion</span><span>Creativity Support</span></p>
+      <p class="desc">Generates a background for a sketch in real time while the artist is still
+        drawing, matching the style of the sketch. Built on SDXL.</p>
+    </div>
+  </article>
+
+  <article class="project" data-cat="vr">
+    <div class="thumb">
+      <span>VR Path Planning</span>
+      <img src="images/vr-path-planning.png" alt="VR drone path planning" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>Using VR in Path-Planning Algorithm Design</h3>
+      <p class="meta">2025 · <span class="status">Under review</span></p>
+      <p class="tags"><span>VR</span><span>Robotics</span></p>
+      <p class="desc">A VR framework for visualising and evaluating 3D autonomous drone navigation in
+        complex environments, used as a tool for analysing the algorithms themselves.</p>
+      <ul class="bullets">
+        <li>A modified A* with turn penalties that removes staircasing while keeping paths
+          near-optimal.</li>
+        <li>32.25% fewer turning manoeuvres than standard A*, and 27.58% fewer than Dijkstra.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="project" data-cat="hcai">
+    <div class="thumb">
+      <span>Modality Escalation</span>
+      <img src="images/engagement-aware.png" alt="Engagement-aware learning" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>Engagement-Aware Modality Escalation for Digital Learning</h3>
+      <p class="meta">2025</p>
+      <p class="tags"><span>AI for Education</span><span>HCAI</span></p>
+      <p class="desc">A multimodal learning framework that adapts the instructional modality to the
+        learner's engagement.</p>
+      <ul class="bullets">
+        <li>Adaptive strategies that escalate progressively between modalities to hold attention and
+          improve learning outcomes.</li>
+        <li>Investigates human-centered AI approaches to personalised digital learning through
+          adaptive multimodal interaction.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="project" data-cat="vr">
+    <div class="thumb">
+      <span>VR Heat Equation Tutorial</span>
+      <img src="images/vr-heat-equation.png" alt="VR heat equation tutorial system" onerror="this.remove()">
+    </div>
+    <div class="body">
+      <h3>VR Tutorial System for the Fundamentals of the Heat Equation</h3>
+      <p class="meta">2024–25 · <span class="status">Under review</span></p>
+      <p class="tags"><span>VR for Education</span><span>HCI</span></p>
+      <p class="desc">An immersive learning environment that teaches the heat equation through
+        interactive visualisation, with real-time exploration of temperature distribution graphs.</p>
+      <ul class="bullets">
+        <li>Educational modules that tie mathematical concepts to dynamic spatial visualisations.</li>
+        <li>In comparative user studies, learners solved analytical problems significantly better
+          than with traditional instruction, with comparable theoretical understanding.</li>
+      </ul>
+    </div>
+  </article>
+
+  <p id="no-match" class="muted" hidden>No projects in this category yet.</p>
+
+  <footer>
+    <p class="collab">I am open to collaborations and consulting in Generative AI, Human-Centered AI
+      and Virtual Reality. Feel free to reach out at
+      <a href="mailto:hermeharb@iiitd.ac.in">hermeharb@iiitd.ac.in</a>.</p>
+    <p>© 2026 Hermehar Bedi</p>
+  </footer>
+</main>
+<script src="projects.js"></script>
+</body>
+</html>
