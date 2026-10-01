@@ -137,9 +137,23 @@ summary:hover::before { color: var(--text); }
 .badge.award   { background: var(--b-award-bg);   color: var(--b-award); }
 .news .text { font-size: 0.96rem; }
 
+/* Category tabs */
+.intro { max-width: 640px; margin-bottom: 20px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 28px; }
+.tab {
+  font: inherit; font-size: 0.9rem; font-weight: 500;
+  padding: 6px 16px; border-radius: 999px; cursor: pointer;
+  border: 1px solid var(--rule); background: transparent; color: var(--muted);
+}
+.tab:hover { color: var(--text); border-color: var(--muted); }
+.tab.active { background: var(--text); border-color: var(--text); color: var(--bg); }
+.bullets { margin: 8px 0 0; padding-left: 18px; font-size: 0.93rem; color: var(--muted); }
+.bullets li { padding: 2px 0; }
+.project[hidden] { display: none; }
+
 /* Projects: thumbnail + text. The placeholder label sits under the image
    and shows only when the image file is missing. */
-.project { display: flex; gap: 24px; margin-bottom: 28px; align-items: center; }
+.project { display: flex; gap: 24px; margin-bottom: 34px; align-items: center; }
 .project .body { flex: 1; min-width: 0; }
 .thumb {
   position: relative; flex-shrink: 0;
