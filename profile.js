@@ -6,7 +6,8 @@
     'media/profile.jpeg',
     'media/profile2.jpeg',
     'media/profile3.jpeg',
-    'media/profile4.jpeg'
+    'media/profile4.jpeg',
+    'media/profile5.jpeg',
   ];
 
   function start() {
