@@ -28,6 +28,14 @@
     <summary>Publications</summary>
     <p class="more">See also <a href="https://scholar.google.co.in/citations?user=ZLsvrkQAAAAJ&hl=en">Google Scholar</a>.</p>
 
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-filter="all" type="button">All</button>
+      <button class="tab" data-filter="book" type="button">Book Chapters</button>
+      <button class="tab" data-filter="conference" type="button">Conference Papers</button>
+      <button class="tab" data-filter="journal" type="button">Journal Papers</button>
+    </div>
+
+    <div class="pubgroup" data-cat="book">
     <h4>Book Chapters</h4>
     <div class="pub">
       <h3>Artificial Intelligence in Diagnostic and Disease Prediction</h3>
@@ -47,7 +55,9 @@
       <p class="venue"><i>Blockchain and Deep Learning for Smart Healthcare</i>, Wiley, 2023</p>
       <p class="links">[<a href="https://doi.org/10.1002/9781119792406.ch1">Paper</a>]</p>
     </div>
+    </div>
 
+    <div class="pubgroup" data-cat="conference">
     <h4>Conference Papers</h4>
     <div class="pub">
       <h3>Comparison of Watershed and K-Means on the Basis of SSIM for Detection of Brain Tumours from MR Images</h3>
@@ -55,7 +65,9 @@
       <p class="venue">ICCMST 2024</p>
       <p class="links">[<a href="https://doi.org/10.1201/9781003561651-4">Paper</a>] [<a href="https://github.com/hermeharbedi/Comparison-of-Watershed-and-K-Means-on-basis-of-SSIM-for-detection-of-Brain-Tumours-from-MR-Images">GitHub</a>]</p>
     </div>
+    </div>
 
+    <div class="pubgroup" data-cat="journal">
     <h4>Journal Papers</h4>
     <div class="pub">
       <h3>Comparative Study of Different Sorting Algorithms Used in Data Structures</h3>
@@ -69,6 +81,7 @@
       <p class="venue"><i>Journal of Emerging Technologies and Innovative Research</i>, 8(9): d12–d15, 2021</p>
       <p class="links">[<a href="https://www.jetir.org/papers/JETIR2109303.pdf">Paper</a>]</p>
     </div>
+    </div>
   </details>
 
   <!-- ============ TEACHING ============ -->
@@ -76,10 +89,26 @@
     <summary>Courses TA'ed</summary>
     <p class="muted">Teaching Assistant at IIIT Delhi</p>
     <ul class="plain">
-      <li>Introduction to Human-Computer Interaction (Monsoon 2024, Monsoon 2025)</li>
-      <li>Introduction to Intelligent Systems (Winter 2026)</li>
       <li>Business of AI (Monsoon 2026)</li>
+      <li>Introduction to Intelligent Systems (Winter 2026)</li>
+      <li>Introduction to Human-Computer Interaction (Monsoon 2025, Monsoon 2024)</li>
       <li>Design of AI-Driven Products (Winter 2025)</li>
+    </ul>
+  </details>
+
+    <!-- ============ MENTORING ============ -->
+  <details open>
+    <summary>Students Mentored</summary>
+    <ul class="plain">
+      <li>Manjot Singh Saini, B.Tech CSAI (2023-27): (B.Tech Independent Project and B.Tech Project)</li>
+      <li>Arshpreet Singh Gill, B.Tech CSAI (2023-27): (B.Tech Independent Project and B.Tech Project)</li>
+      <li>Ishaan Gupta, B.Tech CSD (2023-27): (B.Tech Independent Project)</li>
+      <li>Namandeep Singh, B.Tech CSD (2023-27): (B.Tech Independent Project)</li>
+      <li>Yash Shukla, B.Tech CSAI (2023-27): (B.Tech Independent Project)</li>
+      <li>Aakarshan Sharma, B.Tech CSAI (2024-28): (B.Tech Independent Project)</li>
+      <li>Yashvi Anilkumar Patel, M.Tech CSE (2026-28): (M.Tech Independent Project)</li>
+      <li>Palak, B.Tech CSD (2024-28): (B.Tech Independent Project)</li>
+      <li>Arnav Gupta, B.Tech CSAI (2023-27): (B.Tech Independent Project)</li>
     </ul>
   </details>
 
@@ -116,23 +145,6 @@
     </ul>
   </details>
 
-  <!-- ============ MENTORING ============ -->
-  <details open>
-    <summary>Students Mentored</summary>
-    <ul class="plain">
-      <li>Manjot Singh Saini, B.Tech CSAI (2023-27): (B.Tech Independent Project and B.Tech Project)</li>
-      <li>Arshpreet Singh Gill, B.Tech CSAI (2023-27): (B.Tech Independent Project and B.Tech Project)</li>
-      <li>Ishaan Gupta, B.Tech CSD (2023-27): (B.Tech Independent Project)</li>
-      <li>Namandeep Singh, B.Tech CSD (2023-27): (B.Tech Independent Project)</li>
-      <li>Yash Shukla, B.Tech CSAI (2023-27): (B.Tech Independent Project)</li>
-      <li>Aakarshan Sharma, B.Tech CSAI (2024-28): (B.Tech Independent Project)</li>
-      <li>Yashvi Anilkumar Patel, M.Tech CSE (2026-28): (M.Tech Independent Project)</li>
-      <li>Palak, B.Tech CSD (2024-28): (B.Tech Independent Project)</li>
-      <li>Arnav Gupta, B.Tech CSAI (2023-27): (B.Tech Independent Project)</li>
-    </ul>
-  </details>
-
-
   <footer>
     <p class="collab">I am open to collaborations and consulting in Generative AI, Human-Centered AI
       and Virtual Reality. Feel free to reach out at
@@ -140,5 +152,6 @@
     <p>© 2026 Hermehar Bedi</p>
   </footer>
 </main>
+<script src="filters.js"></script>
 </body>
 </html>
